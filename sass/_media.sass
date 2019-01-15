@@ -33,6 +33,9 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
+
+	.s-install .but-wrap
+		padding-left: 40px
 	.main-head .top-mnu
 		height: 166px
 	.top-mnu-lf-menu
@@ -60,6 +63,7 @@
 				a
 					line-height: 48px
 					padding-left: 20px
+					font-size: 26px
 					&:hover
 						text-decoration: none
 
@@ -79,13 +83,42 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	.s-head .col-wrap
+	.button
+		font-size: 24px
+		padding: 40px 38px
+		border-radius: 140px
+	.col-wrap
 		padding-left: 58px
 		padding-right: 58px
+
+	.s-install
+		.but-wrap
+			padding-right: 34px
+			.icon_1
+				width: 200px
+
 	.button
 		width: 100%
-	.s-head p
-		padding-right: 0
+		line-height: 24px
+	.s-head
+
+		p
+			padding-right: 33px
+
+	h1
+		font-size: 48px
+		line-height: 52px
+	h2
+		font-size: 48px
+		padding-right: 18px
+		line-height: 48px
+		padding-bottom: 60px
+	p
+		font-size: 26px
+	a
+		font-size: 26px
+		width: 140px
+
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -110,22 +143,34 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 580px)
+	.s-head
+		p
+			padding-right: 0
+
 	.main-head
 		.top-mnu-logo
 			width: 200px
 		.toggle-mnu
 			left: 25px
-	.s-head .col-wrap
+	.col-wrap
 		padding-left: 10px
-		padding-right: 10px
+		padding-right: 5px
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.button
+		padding: 14px 20px
 	.h-header
 		text-align: center
-		h1
-			padding-top: 47px
+	h1
+		padding-top: 47px
+		font-size: 42px
+	p
+		font-size: 20px
+	h2
+		font-size: 40px
+		padding-top: 48px
 	.main-head
 		.top-mnu
 			height: 100px
@@ -140,11 +185,18 @@
 			margin-left: 0
 			top: 120px
 			width: 100%
-	.s-head .but-wrap
-		padding-top: 14px
-	s-head .but-wrap
+	.s-head
+		.but-wrap
+			padding-top: 14px
+			padding-bottom: 46px
 		.button-green
 			padding-bottom: 20px
+	.s-install
+		.but-wrap
+			padding-bottom: 0
+			text-align: center
+		&:last-child
+			padding-bottom: 46px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
