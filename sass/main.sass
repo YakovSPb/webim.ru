@@ -1,8 +1,38 @@
 @import "../node_modules/bourbon/app/assets/stylesheets/bourbon"
 @import "vars.sass"
 
+
 //Load Libs SASS
 @import "../app/libs/animate/animate.sass"
+@import "../app/libs/font-awesome/scss/font-awesome"
+
+.s-code
+	background-color: #eff4f4
+	padding-bottom: 90px
+	h2
+		padding-bottom: 80px
+	.but-wrap
+		position: relative
+		padding-left: 37px
+		a
+			font-size: 24px
+			line-height: 36px
+		&::before
+			content: "\f111"
+			font-family: "FontAwesome"
+			position: absolute
+			left: 0
+			top: 0
+			font-size: 8px
+			line-height: 40px
+			color: #3b4269
+
+
+
+
+
+
+
 
 *::-webkit-input-placeholder
 	color: #666
