@@ -13,12 +13,14 @@ body
 
 h1, h2, h3, h4, h5, h6
   font-family: 'Ubuntu', $helvetica
-  font-weight: normal
+  font-weight: 700
   color: $header-color
+  margin: 0
+  padding: 0
 
 h1
   font-size: 36px
-  line-height: 20px
+  line-height: 40px
   text-transform: uppercase
   padding-top: 80px
 
@@ -49,8 +51,11 @@ ul, li
   margin: 0
 
 .button
-  padding: 14px 90px
+  padding: 14px 38px
   font-family: "UbuntuBold", sans-serif
+  min-width: 260px
+  text-align: center
+  font-weight: 700
   font-size: 14px
   text-transform: uppercase
   transition: all .5s ease
@@ -137,7 +142,6 @@ ul, li
       width: 116px
       line-height: 90px
       transition: all 0.5s ease
-      margin-left: 30px
 
       &:hover
         opacity: 0.7
@@ -194,5 +198,24 @@ ul, li
   visibility: visible
 
 
+//Section main-head
+.s-head
+  background-color: #eff4f4
+  h1
+    padding-bottom: 20px
+  p
+    padding-right: 150px
+  .but-wrap
+    padding:
+      top: 60px
+      bottom: 70px
+    .button-green
+      margin-right: 20px
+      margin-bottom: 30px
+  .col-wrap
+    padding-left: 30px
+    max-width: 820px
+
 .hidden
   display: none
+

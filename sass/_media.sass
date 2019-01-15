@@ -7,20 +7,28 @@
 		width: 1650px
 	.main-head
 		.top-mnu-sf-menu
-			padding-right: 30px
+			padding-right: 60px
+		.top-mnu-lf-menu
+			padding-left: 60px
+
 
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1680px)
+@media only screen and (max-width : 1679px)
 	.main-head
 		.top-mnu-sf-menu
-			padding-right: 10px
+			padding-right: 0
+		.top-mnu-logo
+			margin-left: 60px
 
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1300px)
-	.main-head .top-mnu-logo
-		margin-left: 5px
+@media only screen and (max-width : 1370px)
+	.main-head
+		.top-mnu-logo
+			margin-left: 5px
+		.top-mnu-sf-menu
+			padding-right: 11px
 
 
 /* Large Devices, Wide Screens */
@@ -38,7 +46,10 @@
 			position: absolute
 			background-color: #bfd1d1
 			padding-right: 0
+			padding-bottom: 20px
+			padding-top: 10px
 			top: 188px
+			z-index: 5
 			li
 				padding: 0
 				transition: all .5s ease
@@ -68,7 +79,13 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	
+	.s-head .col-wrap
+		padding-left: 58px
+		padding-right: 58px
+	.button
+		width: 100%
+	.s-head p
+		padding-right: 0
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -98,10 +115,17 @@
 			width: 200px
 		.toggle-mnu
 			left: 25px
+	.s-head .col-wrap
+		padding-left: 10px
+		padding-right: 10px
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.h-header
+		text-align: center
+		h1
+			padding-top: 47px
 	.main-head
 		.top-mnu
 			height: 100px
@@ -116,7 +140,11 @@
 			margin-left: 0
 			top: 120px
 			width: 100%
-
+	.s-head .but-wrap
+		padding-top: 14px
+	s-head .but-wrap
+		.button-green
+			padding-bottom: 20px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
