@@ -1,5 +1,16 @@
 $(function() {
 
+
+    $(".toggle-mnu").click(function () {
+    	$(".top-mnu-sf-menu li.on").remove();
+        $(this).toggleClass("on");
+        $(".top-mnu-lf-menu li").addClass("on")
+        $(".top-mnu-lf-menu li").clone().appendTo(".top-mnu-sf-menu");
+
+
+        $(".top-mnu-sf-menu").slideToggle();
+    });
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {

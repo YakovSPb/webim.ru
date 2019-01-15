@@ -1,16 +1,70 @@
 @import "../node_modules/bourbon/app/assets/stylesheets/bourbon"
-
+@import "vars.sass"
 /*==========  Desktop First Method  ==========*/
+
+@media (min-width: 1680px)
+	.container
+		width: 1650px
+	.main-head
+		.top-mnu-sf-menu
+			padding-right: 30px
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1680px)
+	.main-head
+		.top-mnu-sf-menu
+			padding-right: 10px
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px)
+	.main-head .top-mnu-logo
+		margin-left: 5px
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	.main-head .top-mnu
+		height: 166px
+	.top-mnu-lf-menu
+		display: none
+	.main-head .top-mnu
+		background-image: none
+	.main-head
+		.top-mnu-sf-menu
+			display: none
+			min-width: 320px
+			position: absolute
+			background-color: #bfd1d1
+			padding-right: 0
+			top: 188px
+			li
+				padding: 0
+				transition: all .5s ease
+				&:hover
+					background-color: #a4d7d3
+				&:nth-child(4)
+					border-bottom: 2px $header-color solid
+				a
+					line-height: 48px
+					padding-left: 20px
+					&:hover
+						text-decoration: none
 
+			ul, li
+				display: block
+	.main-head .top-mnu-logo
+		text-align: center
+		display: block
+		margin: 0 auto
+		width: 230px
+		padding-top: 40px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
-
+	.main-head .top-mnu-sf-menu
+		margin-left: 20px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -38,14 +92,37 @@
 
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width : 580px)
+	.main-head
+		.top-mnu-logo
+			width: 200px
+		.toggle-mnu
+			left: 25px
+
+
+/* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.main-head
+		.top-mnu
+			height: 100px
+		.top-mnu-logo
+			width: 150px
+			text-align: right
+			padding-top: 0
+		.toggle-mnu
+			top: 40px
+			left: 10px
+		.top-mnu-sf-menu
+			margin-left: 0
+			top: 120px
+			width: 100%
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	/**/
-
+	.main-head
+		.top-mnu-logo
+			margin-left: 100px
 
 /*==========  Mobile First Method  ==========*/
 

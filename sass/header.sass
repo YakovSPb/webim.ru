@@ -2,12 +2,197 @@
 @import "vars.sass"
 
 body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.6
-	font-family: "RobotoRegular", sans-serif
-	overflow-x: hidden
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.6
+  font-family: 'Ubuntu', $helvetica
+  overflow-x: hidden
+  color: $main-color
+  letter-spacing: 0.025em
+
+h1, h2, h3, h4, h5, h6
+  font-family: 'Ubuntu', $helvetica
+  font-weight: normal
+  color: $header-color
+
+h1
+  font-size: 36px
+  line-height: 20px
+  text-transform: uppercase
+  padding-top: 80px
+
+h2
+  font-size: 30px
+  text-transform: uppercase
+  padding-top: 80px
+
+h4
+  font-size: 20px
+
+a, a:focus, a:active
+  font-size: 18px
+  color: #0da088
+  text-decoration: underline
+  font-family: 'Ubuntu', $helvetica
+
+  &:hover
+    color: #0da088
+    text-decoration: none
+
+b, strong
+  font-family: "UbuntuBold", sans-serif
+  font-weight: normal
+
+ul, li
+  padding: 0
+  margin: 0
+
+.button
+  padding: 14px 90px
+  font-family: "UbuntuBold", sans-serif
+  font-size: 14px
+  text-transform: uppercase
+  transition: all .5s ease
+  display: inline-block
+  background-color: #fff
+  color: $header-color
+  text-decoration: none
+  border: $header-color 1px solid
+  border-radius: 30px
+  line-height: 16px
+  letter-spacing: 0
+
+  a
+    font-family: "AralBlack", sans-serif
+    transition: all 0.5s ease
+
+  &:hover
+    background-color: lighten($header-color, 50%)
+    color: $header-color
+    transition: all 0.5s ease
+
+  &-green
+    background-color: $accent-color
+    border-color: transparent
+    color: #ffffff
+
+    &:hover
+      color: #ffffff
+      background-color: darken($accent-color, 10%)
+
+  &-blue
+    background-color: #3b4269
+    color: #ffffff
+    border-color: transparent
+
+    &:hover
+      background-color: lighten(#3b4269, 5%)
+      color: #ffffff
+
+
+.main-head
+  .col-lg-5, .col-lg-6, .col-lg-1
+    padding: 0
+  .top-mnu
+    position: relative
+    background-image: url("../img/bg_header.png")
+    background-repeat: no-repeat
+    height: 100px
+    background-position: left top
+    //background-position: -137px top
+    background-size: 40% 100%
+    box-shadow: 0 0 7px 3px #bfc3c4
+
+    &-sf-menu, &-lf-menu
+      ul, li
+        display: inline-block
+        margin: 0
+        padding: 40px 15px 40px
+        font-family: 'Ubuntu', sans-serif
+        letter-spacing: 0.05em
+
+        &:last-child
+          padding-right: 0
+
+        a
+          display: block
+          color: $header-color
+          text-decoration: none
+          text-transform: uppercase
+          font-size: 19px
+          line-height: 20px
+          font-family: 'Ubuntu', sans-serif
+
+
+
+          &:hover
+            text-decoration: underline
+
+    &-sf-menu
+      float: right
+      padding-right: 40px
+
+    &-logo
+      width: 116px
+      line-height: 90px
+      transition: all 0.5s ease
+      margin-left: 30px
+
+      &:hover
+        opacity: 0.7
+        cursor: pointer
+
+
+//Mobile Menu
+.toggle-mnu
+  display: block
+  position: absolute
+  left: 67px
+  top: 70px
+  float: right
+  padding: 10px 6px
+  width: 57px
+  height: 42px
+  z-index: 2
+
+.toggle-mnu span:after,
+.toggle-mnu span:before
+  content: ""
+  position: absolute
+  left: 0
+  top: -13px
+
+.toggle-mnu span:after
+  top: 13px
+
+.toggle-mnu span
+  position: relative
+  display: block
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before
+  width: 100%
+  height: 5px
+  background-color: #3fd6bc
+  transition: all 0.3s
+  backface-visibility: hidden
+  border-radius: 2px
+
+.toggle-mnu.on span
+  background-color: transparent
+
+.toggle-mnu.on span:before
+  transform: rotate(45deg) translate(10px, 10px)
+
+.toggle-mnu.on span:after
+  transform: rotate(-45deg) translate(7px, -8px)
+
+.toggle-mnu.on + #menu
+  opacity: 1
+  visibility: visible
+
 
 .hidden
-	display: none
+  display: none
