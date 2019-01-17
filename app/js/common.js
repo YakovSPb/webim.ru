@@ -1,5 +1,8 @@
 $(function() {
 
+    $(".s-social .icon-link").equalHeights();
+
+    $("h1, h2").animated("fadeInRight");
 
     $(".toggle-mnu").click(function () {
     	$(".top-mnu-sf-menu li.on").remove();
